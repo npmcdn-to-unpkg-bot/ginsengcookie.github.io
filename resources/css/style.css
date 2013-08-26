@@ -78,7 +78,8 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 250%;
+    word-spacing: -2%;
 }
 a:link, a:visited {
     color: #4c3f37;
