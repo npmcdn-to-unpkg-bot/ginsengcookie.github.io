@@ -116,3 +116,9 @@ p span.origin {
     display: inline-block;
     float: right;
 }
+
+@media all and (max-width:480px) {
+    body {
+        font-size: 80%;
+    }
+}
