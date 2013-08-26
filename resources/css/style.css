@@ -78,7 +78,7 @@ body {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 240%;
     word-spacing: -2%;
 }
 a:link, a:visited {
@@ -115,10 +115,4 @@ p {
 p span.origin {
     display: inline-block;
     float: right;
-}
-
-@media all and (max-width:480px) {
-    body {
-        font-size: 80%;
-    }
 }
