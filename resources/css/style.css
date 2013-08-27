@@ -40,15 +40,15 @@ body {
 
 h1 {
     font-size: 260%;
+    font-weight: 400;
     word-spacing: -3%;
 }
 a:link, a:visited {
     color: #4c3f37;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover, a:active {
-    color: #cea802;
-    -webkit-transition:all 0.2s ease-in-out;
+    color: #f39148;
 }
 
 ul li {
@@ -63,17 +63,20 @@ ul.social .icon {
     text-transform: none;
     font-size: 300%;
 }
+ul.social li a:link {
+    text-decoration: none;
+}
 
 section {
     max-width: 480px;
     padding: 0 20px;
     margin: 12% auto 0;
 }
-p {
+blockquote {
     margin: 4em auto 3em;
     text-align: justify;
 }
-p span.origin {
+blockquote span.origin {
     display: inline-block;
     float: right;
 }
