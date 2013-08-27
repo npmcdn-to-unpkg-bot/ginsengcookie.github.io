@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 @font-face {
     font-family: "socialicoregular";
     src: url('../font/socialico.eot');
@@ -78,6 +79,7 @@ section {
 blockquote {
     margin: 4em auto 3em;
     text-align: justify;
+    font-family: "Nanum Myeongjo", serif;
 }
 blockquote span.origin {
     display: block;
