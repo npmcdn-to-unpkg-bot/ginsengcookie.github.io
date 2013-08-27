@@ -50,7 +50,10 @@ a:link, a:visited {
 a:hover, a:active {
     color: #f39148;
 }
-
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
 ul li {
     display: inline;
 }
@@ -77,6 +80,7 @@ blockquote {
     text-align: justify;
 }
 blockquote span.origin {
-    display: inline-block;
+    display: block;
     float: right;
+    text-align: right;
 }
