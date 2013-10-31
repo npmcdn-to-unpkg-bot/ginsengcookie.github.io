@@ -93,7 +93,7 @@ blockquote span.origin {
   z-index: 2000;
   top: 0;
   left: 0;
-  height: 2px;
+  height: 6px;
 
   -webkit-transition: width 1s;
   -moz-transition: width 1s;
