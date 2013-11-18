@@ -48,8 +48,11 @@ a:link, a:visited {
     color: #4c3f37;
     text-decoration: underline;
 }
-a:hover, a:active {
+a:hover {
     color: #f39148;
+}
+a:active {
+    color: #f6da91;
 }
 ul {
     margin: 0 auto;
@@ -79,7 +82,7 @@ section {
 blockquote {
     margin: 4em auto 3em;
     text-align: justify;
-    font-family: "Nanum Myeongjo", Georgia, serif;
+    font-family: Georgia, "Nanum Myeongjo", serif;
 }
 blockquote span.origin {
     display: block;
