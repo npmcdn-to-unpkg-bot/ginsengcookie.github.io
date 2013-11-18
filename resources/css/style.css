@@ -87,20 +87,3 @@ blockquote span.origin {
     text-align: right;
 }
 
-.pace .pace-progress {
-  background: #4c3f37;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 6px;
-
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
-}
-
-.pace-inactive {
-  display: none;
-}
