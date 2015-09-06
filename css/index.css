@@ -4,17 +4,15 @@
 @import url('socialico.css');
 
 html {
-    width: 100%;
+    font-size: 100%;
     -webkit-font-smoothing: antialiased;
 }
 body {
     margin: 0;
-    width: 100%;
     background-color: #f8f8f8;
     color: #4c3f37;
-    font-size: 100%;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     border-top: solid 6px #f6da91;
 }
@@ -28,7 +26,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: Futura, 'Century Gothic', Helvetica, Arial, 'KoPub Dotum', sans-serif;
     font-weight: 400;
     word-spacing: -3%;
@@ -44,7 +42,7 @@ a:active {
     color: #f6da91;
 }
 ul {
-    margin: 4em auto;
+    margin: 4rem auto;
     padding: 0;
     text-align: center;
 }
@@ -58,23 +56,22 @@ ul.social .icon {
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 3em;
+    font-size: 3rem;
 }
 ul.social li a:link {
     text-decoration: none;
 }
 
 section {
-    max-width: 480px;
-    padding: 0 20px;
+    max-width: 32rem;
     margin: 12% auto 0;
 }
 blockquote {
-    margin: 4em auto 3em;
+    margin: 4rem auto 3rem;
     text-align: justify;
     font-family: Georgia, 'KoPub Batang', serif;
 }
-blockquote span.origin {
+blockquote span.source {
     display: block;
     float: right;
     text-align: right;
