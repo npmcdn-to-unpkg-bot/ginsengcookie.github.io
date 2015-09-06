@@ -1,20 +1,20 @@
-@import url("//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css");
-@import url("//cdn.jsdelivr.net/font-kopub/1.0/kopubbatang.css");
-@import url("//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css");
-@import url("socialico.css");
+@import url('//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css');
+@import url('//cdn.jsdelivr.net/font-kopub/1.0/kopubbatang.css');
+@import url('//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css');
+@import url('socialico.css');
 
 html {
     width: 100%;
     -webkit-font-smoothing: antialiased;
 }
 body {
+    margin: 0;
     width: 100%;
     background-color: #f8f8f8;
     color: #4c3f37;
-    font-family: Futura, "Century Gothic", Helvetica, Arial, "KoPub Dotum", sans-serif;
     font-size: 100%;
-    line-height: 1.5;
-    font-weight: 400;
+    line-height: 1.6;
+    font-weight: 300;
     text-align: center;
     border-top: solid 6px #f6da91;
 }
@@ -28,13 +28,14 @@ body {
 }
 
 h1 {
-    font-size: 260%;
+    font-size: 1.6em;
+    font-family: Futura, 'Century Gothic', Helvetica, Arial, 'KoPub Dotum', sans-serif;
     font-weight: 400;
     word-spacing: -3%;
 }
 a:link, a:visited {
     color: #4c3f37;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:hover {
     color: #f39148;
@@ -43,20 +44,21 @@ a:active {
     color: #f6da91;
 }
 ul {
-    margin: 0 auto;
+    margin: 4em auto;
     padding: 0;
+    text-align: center;
 }
 ul li {
     display: inline;
 }
 ul.social .icon {
-    font-family: "socialicoregular";
+    font-family: 'socialicoregular';
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 300%;
+    font-size: 3em;
 }
 ul.social li a:link {
     text-decoration: none;
@@ -70,12 +72,10 @@ section {
 blockquote {
     margin: 4em auto 3em;
     text-align: justify;
-    font-family: Georgia, "KoPub Batang", serif;
-    font-weight: 300;
+    font-family: Georgia, 'KoPub Batang', serif;
 }
 blockquote span.origin {
     display: block;
     float: right;
     text-align: right;
 }
-
