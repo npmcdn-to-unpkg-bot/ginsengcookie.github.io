@@ -1,6 +1,6 @@
-@import url('//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css');
-@import url('//cdn.jsdelivr.net/font-kopub/1.0/kopubbatang.css');
-@import url('//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css');
+@import url('https://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css');
+@import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
+@import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanummyeongjo/nanummyeongjo.css');
 @import url('socialico.css');
 
 html {
@@ -27,7 +27,7 @@ body {
 
 h1 {
     font-size: 2rem;
-    font-family: Futura, 'Century Gothic', Helvetica, Arial, 'KoPub Dotum', sans-serif;
+    font-family: Futura, 'Century Gothic', 'SF UI Text', Roboto, 'Helvetica Neue', Helvetica, Arial, 'Nanum Barun Gothic', sans-serif;
     font-weight: 400;
     word-spacing: -3%;
 }
@@ -69,7 +69,7 @@ section {
 blockquote {
     margin: 4rem auto 3rem;
     text-align: justify;
-    font-family: Georgia, 'KoPub Batang', serif;
+    font-family: Georgia, 'Nanum Myeongjo', serif;
 }
 blockquote span.source {
     display: block;
