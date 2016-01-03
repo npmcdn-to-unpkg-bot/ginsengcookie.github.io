@@ -4,7 +4,90 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ginsengcookie</title>
-        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+        @import url('https://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css');
+        @import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
+        @import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanummyeongjo/nanummyeongjo.css');
+
+        html {
+            font-size: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            color: #080808;
+            font-family: 'SF UI Text', Roboto, 'Helvetica Neue', Helvetica, Arial, 'Nanum Barun Gothic', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            letter-spacing: -1px;
+        }
+        ::selection{
+            background:#ffe377;
+            color:#080808;
+        }
+        ::-moz-selection{
+            background:#ffe377;
+            color:#080808;
+        }
+
+        a:link, a:visited {
+            color: #080808;
+            text-decoration: none;
+        }
+        a:hover, a:active {
+            color: #d0b03c;
+            text-decoration: none;
+        }
+
+        div#container {
+            width: 90%;
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+        header {
+            margin: 3rem auto;
+            padding-top: 2rem;
+            font-weight: 700;
+        }
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: -2px;
+        }
+        header nav {
+            height: 2rem;
+            border-bottom: solid 1px #b0b0b0;
+            overflow: hidden;
+        }
+            nav ul {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 0;
+                list-style: none;
+            }
+            nav li {
+                display: inline;
+                height: 2rem;
+                margin: auto 0.5rem;
+                padding: 0;
+                font-size: 0.95rem;
+            }
+            nav li:first-child {
+                margin-left: 0;
+            }
+            nav li:last-child {
+                margin-right: 0;
+            }
+        blockquote {
+            margin: 3rem auto;
+            padding: 7rem 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+            word-wrap: break-word;
+            word-break: keep-all;
+            }
+
+        </style>
         <!--[if lt IE 9]>
             <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -19,17 +102,21 @@
         </script>
     </head>
     <body>
-        <section>
-            <h1>ginsengcookie</h1>
-
-            <blockquote id="epigraph">“애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐”<span class="source">&mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a><br />성주그룹 회장</blockquote>
-
-            <ul class="social">
-                <li><a href="http://blog.ginsengcookie.com/" title="Tumblr" class="icon">o</a></li>
-                <li><a href="https://twitter.com/nadudBot" title="Twitter" class="icon">l</a></li>
-                <li><a href="https://soundcloud.com/ginsengcookie" title="Soundcloud" class="icon">!</a></li>
-                <li><a href="https://github.com/ginsengcookie/ginsengcookie.github.io" title="Github" class="icon">g</a></li>
-            </ul>
-        </section>
+        <div id="container">
+            <header>
+                <h1>ginsengcookie</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://blog.ginsengcookie.com/" title="Tumblr">Tumblr</a></li>
+                        <li><a href="https://twitter.com/nadudBot" title="Twitter">Twitter</a></li>
+                        <li><a href="https://soundcloud.com/ginsengcookie" title="Soundcloud">Soundcloud</a></li>
+                        <li><a href="https://github.com/ginsengcookie/ginsengcookie.github.io" title="Github">Github</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <blockquote>
+                “애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐”<br />&mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a>(성주그룹 회장)
+            </blockquote>
+        </div>
     </body>
 </html>
