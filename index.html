@@ -5,88 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ginsengcookie</title>
         <style type="text/css">
-        @import url('https://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css');
-        @import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
-        @import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanummyeongjo/nanummyeongjo.css');
-
-        html {
-            font-size: 100%;
-            -webkit-font-smoothing: antialiased;
-        }
+        @import url(https://cdn.jsdelivr.net/meyer-reset/2.0/reset.min.css);
+        @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
         body {
-            margin: 0 auto;
             background-color: #f7f7f7;
             color: #080808;
-            font-family: 'SF UI Text', Roboto, 'Helvetica Neue', Helvetica, Arial, 'Nanum Barun Gothic', sans-serif;
-            font-weight: 400;
-            line-height: 1.6;
-            letter-spacing: -1px;
-        }
-        ::selection{
-            background:#ffe377;
-            color:#080808;
-        }
-        ::-moz-selection{
-            background:#ffe377;
-            color:#080808;
-        }
-
-        a:link, a:visited {
-            color: #080808;
-            text-decoration: none;
-        }
-        a:hover, a:active {
-            color: #d0b03c;
-            text-decoration: none;
-        }
-
-        div#container {
-            width: 90%;
-            max-width: 80rem;
+            font: 400 100%/1.6 'Spoqa Han Sans', sans-serif;}
+        ::selection{ background:#ffe377; color:#080808; }
+        ::-moz-selection{ background:#ffe377; color:#080808; }
+        a:link, a:hover, a:visited { color: #080808; text-decoration: none; }
+        a:active { color: #ffe377; text-decoration: none; }
+        .h1 { font-size: 1.375rem; }
+        .h2 { font-size: 1.25rem; }
+        .h3 { font-size: 1.125rem; }
+        .h4 { font-size: 1rem; }
+        .h5 { font-size: 0.875rem; }
+        .b { font-weight: 700; }
+        .btn {
+            display: inline-block;
+            padding: 0.35rem; }
+        .vaM { vertical-align: middle; }
+        .container {
             margin: 0 auto;
-        }
-        header {
-            margin: 3rem auto;
-            padding-top: 2rem;
-            font-weight: 700;
-        }
-        header h1 {
-            font-size: 2rem;
-            letter-spacing: -2px;
-        }
-        header nav {
+            padding: 0 5%;
+            min-width: 320px;
+            max-width: 1280px; }
+        nav {
             height: 2rem;
-            border-bottom: solid 1px #b0b0b0;
-            overflow: hidden;
-        }
-            nav ul {
-                display: inline-block;
-                margin: 0 auto;
-                padding: 0;
-                list-style: none;
-            }
-            nav li {
-                display: inline;
-                height: 2rem;
-                margin: auto 0.5rem;
-                padding: 0;
-                font-size: 0.95rem;
-            }
-            nav li:first-child {
-                margin-left: 0;
-            }
-            nav li:last-child {
-                margin-right: 0;
-            }
+            overflow: hidden; }
         blockquote {
-            margin: 3rem auto;
-            padding: 7rem 0;
-            font-size: 1.5rem;
-            font-weight: 300;
+            padding-bottom: 5rem;
             word-wrap: break-word;
-            word-break: keep-all;
-            }
-
+            word-break: keep-all; }
+        .flex {
+            display: flex;
+            flex-direction: row-reverse; }
+        .flexWrap { flex-wrap: wrap; }
+        .mrgn50 { margin: 5rem 0; }
+        .brdrB { border-bottom: solid 1px #b0b0b0;}
+        .trsFade {
+            transition-duration: 0.3s;
+            transition-property: background-color; }
+        .trsFade:focus, .trsFade:active {
+            background-color: rgba(255, 227, 119, 0.4); }
+        .trsBorder {
+            transition-duration: 0.3s;
+            transition-property: box-shadow;
+            box-shadow: none; }
+        .trsBorder:focus, .trsBorder:active {
+            box-shadow: inset 0 0 0 4px rgba(255, 227, 119, 0.4); }
         </style>
         <!--[if lt IE 9]>
             <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -102,21 +69,21 @@
         </script>
     </head>
     <body>
-        <div id="container">
-            <header>
-                <h1>ginsengcookie</h1>
+        <div class="container">
+            <header class="mrgn50 brdrB">
+                <h1 class="btn h2 b">ginsengcookie</h1>
                 <nav>
-                    <ul>
-                        <li><a href="http://blog.ginsengcookie.com/" title="Tumblr">Tumblr</a></li>
-                        <li><a href="https://twitter.com/nadudBot" title="Twitter">Twitter</a></li>
-                        <li><a href="https://soundcloud.com/ginsengcookie" title="Soundcloud">Soundcloud</a></li>
-                        <li><a href="https://github.com/ginsengcookie/ginsengcookie.github.io" title="Github">Github</a></li>
-                    </ul>
+                    <a href="http://blog.ginsengcookie.com/" title="Tumblr" class="btn vaM h5 b trsFade">Tumblr</a>
+                    <a href="https://twitter.com/nadudBot" title="Twitter" class="btn vaM h5 b trsFade">Twitter</a>
+                    <a href="https://soundcloud.com/ginsengcookie" title="Soundcloud" class="btn vaM h5 b trsFade">Soundcloud</a>
+                    <a href="https://github.com/ginsengcookie/ginsengcookie.github.io" title="Github" class="btn vaM h5 b trsFade">Github</a>
                 </nav>
             </header>
-            <blockquote>
-                “애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐”<br />&mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a>(성주그룹 회장)
-            </blockquote>
+            <main>
+                <blockquote class="mrgn50">
+                    <p class="h1">애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐”<br />&mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a>(성주그룹 회장)</p>
+                </blockquote>
+            </main>
         </div>
     </body>
 </html>
