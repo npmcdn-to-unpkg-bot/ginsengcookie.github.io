@@ -1,89 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>ginsengcookie</title>
-        <style type="text/css">
-        @import url(https://cdn.jsdelivr.net/meyer-reset/2.0/reset.min.css);
-        @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-        body {
-            background-color: #f7f7f7;
-            color: #080808;
-            font: 400 100%/1.6 'Spoqa Han Sans', sans-serif;}
-        ::selection{ background:#ffe377; color:#080808; }
-        ::-moz-selection{ background:#ffe377; color:#080808; }
-        a:link, a:hover, a:visited { color: #080808; text-decoration: none; }
-        a:active { color: #ffe377; text-decoration: none; }
-        .h1 { font-size: 1.375rem; }
-        .h2 { font-size: 1.25rem; }
-        .h3 { font-size: 1.125rem; }
-        .h4 { font-size: 1rem; }
-        .h5 { font-size: 0.875rem; }
-        .b { font-weight: 700; }
-        .btn {
-            display: inline-block;
-            padding: 0.35rem; }
-        .vaM { vertical-align: middle; }
-        .container {
-            margin: 0 auto;
-            padding: 0 5%;
-            min-width: 320px;
-            max-width: 1280px; }
-        nav {
-            height: 2rem;
-            overflow: hidden; }
-        blockquote {
-            padding-bottom: 5rem;
-            word-wrap: break-word;
-            word-break: keep-all; }
-        .flex {
-            display: flex;
-            flex-direction: row-reverse; }
-        .flexWrap { flex-wrap: wrap; }
-        .mrgn50 { margin: 5rem 0; }
-        .brdrB { border-bottom: solid 1px #b0b0b0;}
-        .trsFade {
-            transition-duration: 0.3s;
-            transition-property: background-color; }
-        .trsFade:focus, .trsFade:active {
-            background-color: rgba(255, 227, 119, 0.4); }
-        .trsBorder {
-            transition-duration: 0.3s;
-            transition-property: box-shadow;
-            box-shadow: none; }
-        .trsBorder:focus, .trsBorder:active {
-            box-shadow: inset 0 0 0 4px rgba(255, 227, 119, 0.4); }
-        </style>
-        <!--[if lt IE 9]>
-            <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <script type="text/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-43472313-1', 'ginsengcookie.com');
-            ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <header class="mrgn50 brdrB">
-                <h1 class="btn h2 b">ginsengcookie</h1>
-                <nav>
-                    <a href="http://blog.ginsengcookie.com/" title="Tumblr" class="btn vaM h5 b trsFade">Tumblr</a>
-                    <a href="https://twitter.com/nadudBot" title="Twitter" class="btn vaM h5 b trsFade">Twitter</a>
-                    <a href="https://soundcloud.com/ginsengcookie" title="Soundcloud" class="btn vaM h5 b trsFade">Soundcloud</a>
-                    <a href="https://github.com/ginsengcookie/ginsengcookie.github.io" title="Github" class="btn vaM h5 b trsFade">Github</a>
-                </nav>
-            </header>
-            <main>
-                <blockquote class="mrgn50">
-                    <p class="h1">애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐”<br />&mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a>(성주그룹 회장)</p>
-                </blockquote>
-            </main>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ginsengcookie</title>
+  <style type="text/css">
+    @import url("https://cdn.jsdelivr.net/meyer-reset/2.0/reset.min.css");
+    @import url("https://npmcdn.com/basscss@8.0.0/css/basscss.min.css");
+    @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+    body { 
+      font-family: 'Spoqa Han Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #080808;
+      background-color: #f7f7f7;
+      border-top: solid 6px #ffe377;
+    }
+    ::selection{ background:#ffe377; color:#080808; }
+    ::-moz-selection{ background:#ffe377; color:#080808; }
+    a:link, a:hover, a:visited { color: #080808; text-decoration: none; }
+    a:active, a:focus { color: #ffe377; text-decoration: none; }
+    .container { margin: 0 auto; min-width: 320px; max-width: 1280px; }
+    .break-word { word-wrap: break-word; }
+    .break-all { word-break: break-all; }
+    .keep-all { word-break: keep-all; }
+    .btn:focus {
+      outline: none;
+      border-color: #ffe377;
+      box-shadow: 0 0 0 3px #ffe377;
+    }
+  </style>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43472313-1', 'ginsengcookie.com');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="clearfix">
+      <header class="col-12 mt4 pt4 border-bottom">
+        <h1 class="h2 bold m1">ginsengcookie</h1>
+        <nav class="h5 bold table-cell align-middle" style="height: 2rem;">
+          <a href="/writing" title="Writing(s)" class="btn m0 p1">Writing</a>
+          <a href="https://twitter.com/nadudBot" title="Twitter" class="btn m0 p1">Twitter</a>
+          <a href="https://soundcloud.com/ginsengcookie" title="Soundcloud" class="btn m0 p1">Soundcloud</a>
+        </nav>
+      </header>
+      <main class="clearfix">
+        <div class="col-12 mt4">
+          <blockquote class="m1 py4">
+            <p class="h2 break-word keep-all">“애 젖 먹이면서 주방에 앉아서 ‘웰빙 진생쿠키를 만들었다’고 구글에 올리면 전세계에서 주문을 받을 수 있는데, 왜 젊은이들이 이렇게 어마어마한 가상세계가 있는데도 수동적으로 대응하느냐” &mdash; <a href="http://news.nate.com/view/20121016n16407">김성주</a>(성주그룹 회장)</p>
+          </blockquote>
+          <!-- <section class="flex flex-wrap">
+            <div class="col-3 mb2">
+              <a href="#" class="btn block p1">
+                <h2 class="h2 bold m0 p0">Project Name</h2>
+                <p class="m0 p0">Project Description</p>
+              </a>
+            </div>
+            <div class="col-3 mb2">
+              <a href="#" class="btn block p1">
+                <h2 class="h2 bold m0 p0">Project Name</h2>
+                <p class="m0 p0">Project Description</p>
+              </a>
+            </div>
+            <div class="col-3 mb2">
+              <a href="#" class="btn block p1">
+                <h2 class="h2 bold m0 p0">Project Name</h2>
+                <p class="m0 p0">Project Description</p>
+              </a>
+            </div>
+            <div class="col-3 mb2">
+              <a href="#" class="btn block p1">
+                <h2 class="h2 bold m0 p0">Project Name</h2>
+                <p class="m0 p0">Project Description</p>
+              </a>
+            </div>
+          </section> //-->
         </div>
-    </body>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/webfontloader/1.6.21/webfontloader.js"></script>
+  <script>
+    WebFont.load({
+      custom: {
+        families: ['Spoqa Han Sans']
+      }
+    });
+  </script>
+</body>
 </html>
